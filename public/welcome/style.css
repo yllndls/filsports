@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* WELCOME NAVBAR START */
+
+.fixed-top {
+    padding-top: 30px;
+    height: 30px;
+}
+
+.main-section .navbar-fixed-top {
+    width: 100%;
+    background-color: #00fff2;
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 0%;
+    margin-top: 0px;
+    height: 25px;
+    position: fixed;
+    z-index: 1030;
+}
+
+.fixed-top .navbar {
+    width: 100%;
+    background-color: hsl(215, 100%, 7%);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 0%;
+    height: 15px;
+    margin-top: -5px;
+    position: fixed;
+    z-index: 1020;
+}
+
+.nav-item .nav-text {
+    color: hsl(215, 100%, 7%);
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+.fa {
+    height: 30px;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.login {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 2px;
+    float: right;
+}
+/* WELCOME NAVBAR END */
+
+/* ------------------------------------------------ */
+
+/* HOME START */
+.home {
+    padding: 60px 20px;
+    display: flex;
+    background-image: url('../welcome/img/qw.jpg');
+    background-size: cover;
+    box-sizing: content-box;
+}
+    
+.home .main-text {
+    height: 40vh;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    position: static;
+    z-index: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.home .img {
+    flex: 1 1 80px;
+}
+
+.home .img img {
+    margin-top: 3%;
+    width: 68%;
+    animation: c 5s linear infinite;
+}
+@keyframes c{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.home .main-text {
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+
+.home .main-text h1 {
+    margin-left: 10%;
+    font-size: 60px;
+    color: white;
+}
+
+.home .main-text h1 span {
+    color: #0e0ec9;
+    font-size: 60px;
+}
+
+.home .main-text h6 {
+    margin-top: 20%;
+    margin-left: 11%;
+    font-size: 25px;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .home{
+        height: 90vh;
+    } 
+}
+@media screen and (max-width:799px) {
+    .home{
+        height: 140vh;
+    } 
+}
+        
+@media screen and (max-width:550px) {
+    .home{
+        height: 118vh;
+    } 
+}
+@media screen and (max-width:420px) {
+    .main-text h1 span{
+        font-size: 70px;
+    } 
+}
+@media screen and (max-width:320px) {
+    .main-text h1{
+        font-size: 40px;
+    }  
+    .main-text h1 span{
+        font-size: 40px;
+    }  
+}
+/* HOME END */
+
+
+
+/* SERVICES START */
+.services .img{
+    flex: 1 1 80px;
+}
+
+.services .img img{
+    margin: 6% 0 0 20%;
+    width: 63%;
+    animation: c 5s linear infinite;
+}
+
+.services {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    background-size: cover;
+    height: 100vh;
+}
+
+.services:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.servicesbackground {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    padding: 10px 90px 15px 80px;
+}
+
+.servicesbackground h2 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.servicesbackground h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.servicesbackground p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: #000000;
+    font-family: 'Poppins' sans-serif;
+}
+/* SERVICES END */
+
+
+
+/* SPORTS PAGE */
+.sports {
+    background-color: teal;
+    background-image: url('../welcome/img/pentagon2.png');
+    box-sizing: border-box;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    float: center;
+}
+
+del {
+    color: rgb(88, 88, 88);
+}
+
+.product-wrapper {
+    width: calc(25% - 20px);
+    background: white;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    transform: scale(0.95);
+    margin-top: -30%;
+}
+
+.product {
+    width: 100%;
+    background: #e8c8fb;
+}
+
+.product .img {
+    height: 80%;
+    width: 100%;
+}
+
+.product .img img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    object-fit: contain;
+}
+
+.product .info {
+    width: 100%;
+    height: 20%;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+.info .details {
+    height: 100%;
+    width: 65%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+.buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.buy-btn button  {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #3d0686;
+    color: #ffffff;
+    background: #5f00dd;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 25px;
+}
+
+.buy-btn button:hover {
+    background: yellow;
+    border: 1px solid #ffffff;
+}
+
+.buy-btn button a {
+    color: #ffffff;
+}
+.buy-btn button a:hover {
+    color: #000000;
+}
+
+
+@media screen and (max-width:1200px) {
+    .product-wrapper {
+        width: calc(33.33% - 20px);
+    }
+
+    .container {
+        align-content: start;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .product-wrapper {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .product-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .product-wrapper {
+        height: auto;
+    }
+
+    .info .details {
+        width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .buy-btn {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+/* ABOUT US PAGE */
+.about-us {
+    background-color: #006685;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 90vh;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-content {
+    float: left;
+    width: 50%;
+    height: 21.5vh;
+    padding: 20px 60px 0px 0;
+    margin-top: 65vh; /* for adjustmet */
+}
+
+.container-content h2 {
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: -65%;
+}
+
+.container-content p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family: 'Poppins' sans-serif;
+}
+
+
+  /* -- terms & conditions, privacy policy, customer feedback -- */
+ /* unvisited link */
+.container-content p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+.container-content p a:hover {
+    color: rgb(0, 183, 255);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+.container-content p a:active {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  } 
+
+/* footer start */
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #00fff2;
+    text-align: center;
+    font-size: 15px;
+    color: hsl(0, 0%, 32%);
+}
+
+.modal-dialog {
+    width: 150%;
+}
+.modal-body p {
+    text-align: left;
+    font-size: 11px;
+}
+
+/* ABOUT US  END */

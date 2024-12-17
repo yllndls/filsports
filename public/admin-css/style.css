@@ -1,0 +1,290 @@
+
+
+/* admin login */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+
+}
+body {
+  background-image: url('../user/img/qw.jpg');
+  background-size: cover;
+}
+div.container{
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-image: url('../admin-css/img/bg4.jpg');
+  padding: 50px;
+  background-size: cover;
+  box-shadow: 3px 1px 4px 1px rgba(0, 0, 0, .3);
+}
+
+div.container div.myform{
+  width: 50%;
+  margin-right: 30px;
+}
+div.container div.myform h1{
+  color: #1c1c1e;
+  margin-bottom: 20px;
+}
+div.container div.myform input{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 130%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 0;
+  font-size: 15px;
+}
+div.container div.myform button{
+  color: white;
+  background-color: #1c1c1e;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 5px 12px;
+  font-weight: 500;
+  transition: .2s ease-in;
+	cursor: pointer;
+}
+div.container div.image img{
+  width: 50%;
+  display: fixed;
+  margin-left: 30%;
+}
+div.container div.myform button:hover{
+	background: #1f6eff;
+  color: #ffffff;
+}
+div.container div.myform button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+.dropdown img {
+  margin: auto 5em;
+}
+.dropdown-menu strong  {
+  margin-left: 10px;
+  font-size: 20px
+}
+.dropdown-menu .email {
+  margin-left: 10px;
+  font-size: 15px
+}
+.dropdown-item {
+  margin-bottom: 5px
+}
+.alert {
+  background-color: rgb(255, 255, 255);
+  height: 3%;
+  width: 30%;
+  margin: 2px auto;
+  border: 2px solid rgb(241, 241, 241);
+}
+.alert .close {
+  width: 38px;
+  margin-left: 21rem;
+  margin-top: 1px; 
+}
+/* login end here */
+
+
+
+
+/* dashboard */
+  
+ .primary-text {
+  color: #000000;
+}
+  
+ .second-text {
+   color: rgb(70, 63, 63);
+}
+  
+.primary-bg {
+  background-color: #3e3e92
+}
+  
+.secondary-bg {
+  background-color: #ffffff;
+}
+  
+.rounded-full {
+  border-radius: 100%;
+}
+  
+#wrapper {
+  overflow-x: hidden;
+  background-color:  rgb(227, 228, 215);
+ }
+  
+#sidebar-wrapper {
+  background-image: url('/admin-css/img/bgb.png');
+  min-height: 100vh;
+  margin-left: -15rem;
+}
+  
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 2rem;
+  font-size: 1.2rem;
+}
+  
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+  
+#page-content-wrapper {
+  min-width: 100vw;
+  background-color: #e0edf7 ;
+}
+  
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+  
+#menu-toggle {
+  cursor: pointer;
+}
+  
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+  background-color: transparent;
+}
+  
+.list-group-item.active {
+    font-weight: bold;
+    border: none;
+    background-color: #ecfd00 !important;
+    color: #ffffff !important;
+    border-color: #007bff !important;
+}
+
+  
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.email-sa-admin {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.border-left-primary {
+  border-left: 4px solid #4e73df;
+}
+.border-left-warning {
+  border-left: 4px solid #f6c23e;
+}
+.border-left-success {
+  border-left: 4px solid #1cc88a;
+}
+.badge {
+  font-size: 0.75rem;
+}
+
+/* dashboard end here */
+
+
+
+/* admin bookings */
+
+.order-details {
+  padding: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 70vh; /* Adjust the height as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  border-collapse: collapse;
+}
+
+.table {
+  width: 80%;
+  margin-left: 100px;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+td, th {
+  border-right: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 8px; /* Adjust the padding as needed */
+}
+
+tbody tr:hover {
+  background-color: rgb(151, 181, 206);
+}
+thead tr {
+  background: #242b4d;
+  color: #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.button {
+  background-color: #2f3238;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button:hover {
+  background: #3176f7;
+
+  
+}
+.button1 {
+  border-radius: 50%;
+}
+
+
+
+tbody {
+  background-color: #b6b6b6;
+}
+
+/* admin bookings end here */
+
